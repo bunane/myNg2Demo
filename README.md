@@ -1,5 +1,7 @@
 # SportPc
 
+###6不6
+
 ##安装开发环境 
 
 >npm install @angular-cli -g
