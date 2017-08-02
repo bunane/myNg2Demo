@@ -1,0 +1,17 @@
+<div class="primeng-ui_layout" [@flyIn]="active">
+  <h1>我是primeng-ui</h1>
+  
+  <p-breadcrumb [model]="items"></p-breadcrumb>
+  <p-megaMenu [model]="menuItemItems"></p-megaMenu>
+  <p-panelMenu [model]="panelMenuItems" [style]="{'width':'300px'}"></p-panelMenu>
+  <div class="chart_layout clearfix">
+    <div class="ui-g-6">
+      <p-chart type="radar" [data]="raderData"></p-chart>
+    </div>
+    <div class="ui-g-6">
+      <p-chart type="polarArea" [data]="polarAreaData"></p-chart>
+    </div>
+    
+  </div>
+  
+</div>

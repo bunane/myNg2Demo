@@ -1,0 +1,36 @@
+<div [@flyIn]="active">
+  <div class="children-routes_layout">
+    <h1>
+      我是children-routes
+    </h1>
+    <button routerLink="pageA" pButton type="button" (click)="clickBtn()" icon="fa-check" label="pageA"></button>
+    <button routerLink="pageB" pButton type="button" (click)="clickBtn()" icon="fa-check" iconPos="right" label="pageB"></button>
+    <button routerLink="pageC" pButton type="button" (click)="clickBtn()" icon="fa-check" label="pageC"></button>
+    <button pButton type="button" (click)="clickBtn()" icon="fa-check" label="pageD" disabled="true"></button>
+    <p>点击了{{clickNum}}次</p>
+
+  <p-tabView (onChange)="handleChange($event)">
+      <p-tabPanel header="A不可删除" leftIcon="fa-calendar">
+        aaa
+      </p-tabPanel>
+      <p-tabPanel header="B不可选" leftIcon="fa-calendar" [disabled]="true">
+        三三积分两块三安居客浪费加快浪费江苏省看就福克斯积分可莱丝撒娇的开发撒了房价萨克斯解放路看是李开复大叔控方式送达就
+      </p-tabPanel>
+
+      <p-tabPanel header="C选项" [selected]="true" leftIcon="fa-calendar" [closable]="true">
+        xcccc
+      </p-tabPanel>
+      <p-tabPanel header="D选项" leftIcon="fa-calendar" [closable]="true">
+      bbb
+      </p-tabPanel>
+  </p-tabView>
+
+
+    <router-outlet></router-outlet>
+  </div>
+
+  <!--<p-messages [(value)]="msgs"></p-messages>-->
+
+  <p-growl [(value)]="msgs"></p-growl>
+</div>
+

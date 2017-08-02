@@ -1,0 +1,10 @@
+<div class="whatever_layout" [@flyIn]>
+  <h1>
+    我是whatever自己
+  </h1>
+
+  <router-outlet></router-outlet>
+  <app-timing></app-timing>
+  <app-reuse myName="‘引入模块’" (reuseClick)="doclick()"></app-reuse>
+</div>
+
