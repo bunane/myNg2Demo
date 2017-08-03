@@ -31,7 +31,11 @@ export const rootRouterConfig: Routes = [
     {
         path: 'primengUi',
         loadChildren: './primeng-ui/primeng-ui.module#PrimengUiModule'
-    }
+    },
+    {
+        path: 'commonDirectives',
+        loadChildren: './common-directives/common-directives.module#CommonDirectivesModule'
+    },
 
 
 

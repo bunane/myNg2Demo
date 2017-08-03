@@ -23,7 +23,6 @@ export class ChildrenRoutesComponent implements OnInit {
   }
 
   handleChange(e) {
-    console.log(e);
     this.msgs = [];
     this.msgs.push({severity:'info', summary:'你点击了选项卡', detail: '第' + e.index + '个'});
 

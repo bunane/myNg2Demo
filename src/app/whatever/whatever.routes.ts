@@ -9,7 +9,6 @@ export const whateverRoutes=[
         children:[{
             path:'',
             component: DemoTestComponent,
-            // loadChildren:'../demo-test/post.module#PostModule'
         }]  
     }
 ];

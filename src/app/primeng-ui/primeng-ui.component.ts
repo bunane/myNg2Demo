@@ -9,11 +9,11 @@ import { MenuItem } from 'primeng/primeng';
 })
 export class PrimengUiComponent implements OnInit {
 
-    private items: MenuItem[];
+    items: MenuItem[];
 
-    private menuItemItems: MenuItem[];
+    menuItemItems: MenuItem[];
 
-    private panelMenuItems: MenuItem[];
+    panelMenuItems: MenuItem[];
 
     public raderData: any;
     public polarAreaData: any;
@@ -54,22 +54,22 @@ export class PrimengUiComponent implements OnInit {
                     14
                 ],
                 backgroundColor: [
-                    "#FF6384",
-                    "#4BC0C0",
-                    "#FFCE56",
-                    "#E7E9ED",
-                    "#36A2EB"
+                    '#FF6384',
+                    '4BC0C0',
+                    '#FFCE56',
+                    '#E7E9ED',
+                    '#36A2EB'
                 ],
                 label: 'My dataset'
             }],
             labels: [
-                "身高",
-                "体重",
-                "力量",
-                "柔韧性",
-                "肺活量"
+                '身高',
+                '体重',
+                '力量',
+                '柔韧性',
+                '肺活量'
             ]
-        }
+        };
     }
 
     ngOnInit() {
@@ -92,8 +92,8 @@ export class PrimengUiComponent implements OnInit {
                             }, { label: 'TV 1.2' }]
                         },
                         {
-                            label: 'TV 2',
-                            items: [{ label: 'TV 2.1' }, { label: 'TV 2.2' }]
+                            label: 'url',
+                            items: [{ label: '百度', url: 'https://www.baidu.com' }, { label: 'home', url: 'home' }]
                         }
                     ],
                     [

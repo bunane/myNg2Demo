@@ -1,4 +1,4 @@
-<div [@flyIn]="active">
+<div [@flyIn]="'active'">
   <div class="children-routes_layout">
     <h1>
       我是children-routes
@@ -28,8 +28,6 @@
 
     <router-outlet></router-outlet>
   </div>
-
-  <!--<p-messages [(value)]="msgs"></p-messages>-->
 
   <p-growl [(value)]="msgs"></p-growl>
 </div>
