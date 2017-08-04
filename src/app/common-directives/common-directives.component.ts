@@ -22,6 +22,7 @@ export class CommonDirectivesComponent implements OnInit {
 	constructor(
 		private http: Http,
 		// public infos: ContactService
+		
 	) { }
 
 	ngOnInit() {
