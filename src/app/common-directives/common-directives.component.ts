@@ -28,20 +28,20 @@ export class CommonDirectivesComponent implements OnInit {
 		this.getData()
 	}
 
-	
-    public getData(url:string = './assets/json/test.json') {
-        return this.http.get(url)
-            .toPromise()
-            .then((response) => {
-                const res = response.json();
-                this.data = res;
-                return res;
-            });
-    }
-	
-	
+
+	public getData(url: string = './assets/json/test.json') {
+		return this.http.get(url)
+			.toPromise()
+			.then((response) => {
+				const res = response.json();
+				this.data = res;
+				return res;
+			});
+	}
+
+
 }
-export class dataClass{
+export class dataClass {
 	id: number;
 	name: string;
 	text: string;
