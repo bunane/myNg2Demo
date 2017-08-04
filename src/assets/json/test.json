@@ -1,0 +1,5 @@
+{
+    "id": 1,
+    "name": "数据1",
+    "text": "你调用ContactService.getData方法默认会调用数据，这是ts的默认参数带来的"
+}

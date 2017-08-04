@@ -6,11 +6,14 @@ import { HttpModule } from '@angular/http';
 import { CommonDirectivesComponent } from './common-directives.component';
 import { commonDirectivesRoutes } from './common-directives.routes';
 
+import {AutoCompleteModule, TabViewModule, ButtonModule,MessagesModule,GrowlModule} from "primeng/primeng";
+
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(commonDirectivesRoutes),
-    HttpModule
+    HttpModule,
+    ButtonModule
   ],
   declarations: [
     CommonDirectivesComponent
