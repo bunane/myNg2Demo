@@ -8,9 +8,9 @@
 
 >cnpm install
 
->npm install sql.js --save-dev
+<!-->npm install sql.js --save-dev
 
->typings install dt~websql --global
+>typings install dt~websql --global-->
 
 ##开发命令 默认端口是 4200 具体怎么改.我不告诉你:) 在命令行里面修改就可以了
 
@@ -26,17 +26,17 @@ electron开发
 打包
 >ng build --prod
 
->npm install --save-dev electron-packager -g
+<!-->npm install --save-dev electron-packager -g
 
->electron-packager ./dist sportPc  -all --electron-version=1.4.13
+>electron-packager ./dist sportPc  -all --electron-version=1.4.13-->
 
 具体怎么安装这个环境
 
 >cnpm install @angular-cli
 
->npm i electron-prebuilt -g
+<!-->npm i electron-prebuilt -g
 
-index.js 是 electron的配置文件如果新建组件什么的下面是对应的命令行 你可以直接进入到你需要创建的目录下创建
+index.js 是 electron的配置文件如果新建组件什么的下面是对应的命令行 你可以直接进入到你需要创建的目录下创建-->
 
 Component 组件
 >ng g component my-new-component
@@ -74,7 +74,7 @@ Module 模块
 
 >ng serve --prod --aot 
 
-#记得安装tslint
+<!--#记得安装tslint-->
 
 
 
