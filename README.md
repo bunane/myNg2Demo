@@ -1,5 +1,5 @@
 # 第一个ng-cli项目
-
+test
 ##安装开发环境 
 
 >npm install @angular-cli -g
