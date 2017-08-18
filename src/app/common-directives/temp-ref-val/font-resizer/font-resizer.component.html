@@ -1,0 +1,8 @@
+
+<p-panel header="子组件" [toggleable]="true">
+  <!--<button (click)="dec()" title="smaller">-</button>
+  <button (click)="inc()" title="bigger">+</button>-->
+  <button pButton type="button" (click)="dec()" label="-"></button>
+  <button pButton type="button" (click)="inc()" label="+"></button>
+  <label [style.font-size.px]="size">FontSize: {{size}}px</label>
+</p-panel>

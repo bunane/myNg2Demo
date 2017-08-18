@@ -1,0 +1,35 @@
+<div class="directive_layout">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      {{title}}
+    </div>
+    <div class="panel-body">
+
+      <div class="ui-inputgroup">
+        <input pInputText placeholder="Keyword" #heroInput>
+        <button pButton type="button" icon="fa-search" class="ui-button-secondary" (click)="sayHello(heroInput.value)"></button>
+        <p>{{heroInput.value}}</p>
+      </div>
+
+      <div class="binding_layout">
+        <div class="attr_bind clearfix">
+          <div class="img_box">
+            <img [src]="imgSrc" alt="图片无法显示">
+          </div>
+          <button (click)="changeImg()" pButton type="button" icon="fa-refresh" label="随机换图片"></button>
+        </div>
+
+        <div class="event_bind">
+          <button pButton type="button" icon="fa-check" label="事件绑定" (click)="eventFn($event)"></button>
+        </div>
+        <div class="twoway_bind">
+          <app-font-resizer [(size)]="fontSizePx"></app-font-resizer>
+          <div [style.font-size.px]="fontSizePx">
+            子组件控制字体大小的文字
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

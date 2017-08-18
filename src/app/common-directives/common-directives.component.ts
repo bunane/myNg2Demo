@@ -17,6 +17,8 @@ import 'rxjs';
 })
 export class CommonDirectivesComponent implements OnInit {
 
+	public title: string = 'bootstrap';
+
 	public data = new dataClass;
 
 	constructor(
@@ -38,6 +40,10 @@ export class CommonDirectivesComponent implements OnInit {
 				this.data = res;
 				return res;
 			});
+	}
+
+	public returnNum():number {
+		return 2333
 	}
 
 

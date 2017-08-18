@@ -7,6 +7,19 @@
 
     <button (click)="getData('./assets/json/test2.json')" pButton type="button" icon="fa-check" label="换数据"></button>
   </div>
+  <div class="directive_layout">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        {{title}}
+      </div>
+      <div class="panel-body">
+        <p>calc: 23 * 21 = {{23 * 21}}</p>
+        <p>返回数字: {{returnNum()}}</p>
+      </div>
+    </div>
+  </div>
+  <app-temp-ref-val></app-temp-ref-val>
+  <app-some-direc></app-some-direc>
 
 </div>
 

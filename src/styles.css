@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/primeng/resources/primeng.min.css';
-@import '../node_modules/primeng/resources/themes/omega/theme.css';
-@import './lib/font-awesome-4.7.0/css/font-awesome.min.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeng/resources/themes/omega/theme.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */
 fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
