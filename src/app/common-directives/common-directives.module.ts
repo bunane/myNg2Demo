@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { CommonDirectivesComponent } from './common-directives.component';
 import { commonDirectivesRoutes } from './common-directives.routes';
@@ -17,7 +18,8 @@ import { SomeDirecComponent } from './some-direc/some-direc.component';
     RouterModule.forChild(commonDirectivesRoutes),
     HttpModule,
     ButtonModule,
-    PanelModule
+    PanelModule,
+    FormsModule
   ],
   declarations: [
     CommonDirectivesComponent,

@@ -4,13 +4,57 @@
       {{title}}
     </div>
     <div class="panel-body">
+      <p-panel header="*ngFor">
+        <ul>
+          <li *ngFor="let li of data;let i = index">
+            {{i+1}}: {{li.name}}, {{li.text}}
+          </li>
+        </ul>
+      </p-panel>
+
+      <div class="ui-g-6">
         <p-panel header="*ngIf">
           <button pButton icon="fa-refresh" (click)="controlShow()"></button>
           <p *ngIf="isShow">你好</p>
         </p-panel>
-        <p-panel header="*ngFor">
-
+      </div>
+      <div class="ui-g-6">
+        <p-panel header="ngSwitch">
+          <button pButton icon="fa-refresh" (click)="changeMapStatus()"></button>
+          <div [ngSwitch]="mapStatus">
+            <p *ngSwitchCase="'状态一'">状态一</p>
+            <p *ngSwitchCase="'状态二'">状态二</p>
+            <p *ngSwitchDefault>系统错误...</p>
+          </div>
         </p-panel>
+      </div>
+      <div class="ui-g-6">
+        <p-panel header="ngClass">
+          <p [ngClass]="addClass">批量加类批量加类批量加类</p>
+          <button pButton icon="fa-refresh" (click)="setClass()"></button>
+        </p-panel>
+      </div>
+      <div class="ui-g-6">
+        <p-panel header="ngStyle">
+          <p [ngStyle]="addStyle">批量style内联样式</p>
+          <button pButton icon="fa-refresh" (click)="setStyle()"></button>
+        </p-panel>
+      </div>
+      <div class="ui-g-6">
+        <p-panel header="ngModel,只能用在input">
+          <input [(ngModel)]="ngmodelClass.name">
+          <p>{{ngmodelClass.name}}</p>
+        </p-panel>
+      </div>
+      <div class="ui-g-6">
+        <p-panel header="pipe">
+          {{currentTime|date:"yyyy年MM月dd日 HH:mm:ss"}}
+        </p-panel>
+
+      </div>
+
+
+
 
 
 

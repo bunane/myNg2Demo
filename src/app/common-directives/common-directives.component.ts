@@ -7,6 +7,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs';
 
 // import { ContactService } from './services/contact.service';
+import { DataClass } from './model/get-data.model'
 
 @Component({
 	selector: 'app-common-directives',
@@ -19,7 +20,7 @@ export class CommonDirectivesComponent implements OnInit {
 
 	public title: string = 'bootstrap';
 
-	public data = new dataClass;
+	public data = new DataClass;
 
 	constructor(
 		private http: Http,
@@ -47,11 +48,6 @@ export class CommonDirectivesComponent implements OnInit {
 	}
 
 
-}
-export class dataClass {
-	id: number;
-	name: string;
-	text: string;
 }
 
 
