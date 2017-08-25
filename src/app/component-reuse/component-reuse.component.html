@@ -1,7 +1,11 @@
 <div class="component-reuse_layout" [@flyIn]="'active'">
-  <h1>
-    我是component-reuse
-  </h1>
-  <app-reuse myName="‘{{myName}}’" (reuseClick)="doclick()"></app-reuse>
-</div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      我是component-reuse
+    </div>
+    <div class="panel-body">
+      <app-reuse myName="‘{{myName}}’" (reuseClick)="doclick()"></app-reuse>
+    </div>
+  </div>
 
+</div>

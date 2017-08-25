@@ -4,17 +4,17 @@ import { InjectionServiceComponent } from './injection-service/injection-service
 
 export const rootRouterConfig: Routes = [
     {
-		path:'',
-		redirectTo:'home',
-		pathMatch:'full'
-	},
-    { 
-        path: 'home',
-        component: HomeComponent 
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
     },
-    { 
+    {
+        path: 'home',
+        component: HomeComponent
+    },
+    {
         path: 'whatever',
-        loadChildren: './whatever/whatever.module#WhateverModule' 
+        loadChildren: './whatever/whatever.module#WhateverModule'
     },
     {
         path: 'childrenRoutes',
@@ -36,6 +36,10 @@ export const rootRouterConfig: Routes = [
         path: 'commonDirectives',
         loadChildren: './common-directives/common-directives.module#CommonDirectivesModule'
     },
+    {
+        path: 'communication',
+        loadChildren: './communication/communication.module#CommunicationModule'
+    }
 
 
 
