@@ -1,0 +1,9 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      父子组件传递
+  </div>
+  <div class="panel-body">
+      <app-child #child (follow)="doSomething()" panelTitle="设置子组件标题"></app-child>
+      <button (click)="child.childFn()" pButton type="button" label="触发子组件事件"></button>
+  </div>
+</div>
