@@ -39,6 +39,10 @@ export const rootRouterConfig: Routes = [
     {
         path: 'communication',
         loadChildren: './communication/communication.module#CommunicationModule'
+    },
+    {
+        path: 'lifecycle',
+        loadChildren: './lifecycle/lifecycle.module#LifecycleModule'
     }
 
 
