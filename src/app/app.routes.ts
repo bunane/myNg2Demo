@@ -43,6 +43,10 @@ export const rootRouterConfig: Routes = [
     {
         path: 'lifecycle',
         loadChildren: './lifecycle/lifecycle.module#LifecycleModule'
+    },
+    {
+        path: 'componentHigh',
+        loadChildren: './component-high/component-high.module#ComponentHighModule'
     }
 
 

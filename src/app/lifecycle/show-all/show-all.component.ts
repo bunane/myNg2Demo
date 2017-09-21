@@ -1,9 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-show-all',
   templateUrl: './show-all.component.html',
-  styleUrls: ['./show-all.component.less']
+  styleUrls: ['./show-all.component.less'],
+  changeDetection:ChangeDetectionStrategy.OnPush//shadowDom
+
 })
 export class ShowAllComponent implements OnInit {
 

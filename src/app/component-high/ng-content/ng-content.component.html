@@ -1,0 +1,12 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    ng-content
+  </div>
+  <div class="panel-body">
+    <app-content-child>
+      <h5>投影一个标题</h5>
+      <app-content-child-content (clickEvent)="doIt($event)"></app-content-child-content>
+      <p>投影一个文字</p>
+    </app-content-child>
+  </div>
+</div>

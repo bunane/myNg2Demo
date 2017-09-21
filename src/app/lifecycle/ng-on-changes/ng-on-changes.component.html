@@ -1,0 +1,14 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    ngOnChanges
+  </div>
+  <div class="panel-body">
+    <input type="text" [(ngModel)]="userName">
+    <br>
+    <input type="text" [(ngModel)]="userObj.userName">
+
+
+    <app-child-a [userName]="userName" [userObj]="userObj"></app-child-a>
+  </div>
+
+</div>
