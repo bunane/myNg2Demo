@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { InjectionServiceComponent } from './injection-service/injection-service.component'
+import { InjectionServiceComponent } from './injection-service/injection-service.component';
 
 export const rootRouterConfig: Routes = [
     {
@@ -47,6 +47,10 @@ export const rootRouterConfig: Routes = [
     {
         path: 'componentHigh',
         loadChildren: './component-high/component-high.module#ComponentHighModule'
+    },
+    {
+        path: 'justDirective',
+        loadChildren: './just-directive/just-directive.module#JustDirectiveModule'
     }
 
 

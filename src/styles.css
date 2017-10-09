@@ -38,6 +38,16 @@ a:active {star:expression(this.onFocus=this.blur());}
 /*清除浮动--推荐使用*/
 .clearfix:before,.clearfix:after{content: '';display: table;}
 .clearfix:after{clear: both;}
+/*禁止选中文本*/
+.textns {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    not supported by any browser */
+}
 /*本项目*/
 html,body{
     height: 100%;

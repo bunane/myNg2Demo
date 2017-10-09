@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ContentChild,ContentChildren,QueryList } from '@angular/core';
+import { ContentChildContentComponent } from '../content-child-content/content-child-content.component';
 
 @Component({
   selector: 'app-content-child',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-child.component.css']
 })
 export class ContentChildComponent implements OnInit {
+  // @ContentChild(ContentChildContentComponent)
+  // contentChildContent:ContentChildContentComponent;
+  @ContentChildren(ContentChildContentComponent)
+  contentChildContentList:QueryList<ContentChildContentComponent>;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngAfterContentInit(){
+    // console.log(this.contentChildContent);
+    this.contentChildContentList.forEach((item)=>{
+      console.log(item);
+    })
   }
 
 }

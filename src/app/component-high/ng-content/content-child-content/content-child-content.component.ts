@@ -7,9 +7,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ContentChildContentComponent implements OnInit {
 
+  public title:string="默认标题";
+
   @Output()
   public clickEvent :EventEmitter<string> = new EventEmitter<string>();
-
 
   constructor() { }
 

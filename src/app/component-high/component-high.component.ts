@@ -30,7 +30,7 @@ export class ComponentHighComponent implements OnInit {
     })
 
     this.demo1 = this.dyncomp.createComponent(childComp,0);
-    this.demo1.instance.title = "我的index是0,我的父级没接收事件";
+    this.demo1.instance.title = "我的index是0、我的父级没接收事件";
 
   }
 
