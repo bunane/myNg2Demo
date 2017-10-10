@@ -51,6 +51,20 @@ export const rootRouterConfig: Routes = [
     {
         path: 'justDirective',
         loadChildren: './just-directive/just-directive.module#JustDirectiveModule'
+    },
+    {
+        path: 'reviewModule',
+        loadChildren: './review-module/review-module.module#ReviewModuleModule'
+    },
+    {
+        path: 'routerParams',
+        loadChildren: './router-params/router-params.module#RouterParamsModule'
+    },
+
+
+    {
+        path: '**',
+        component: HomeComponent
     }
 
 

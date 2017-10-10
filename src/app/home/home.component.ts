@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { flyIn } from '../animations/fly-in';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,9 +12,17 @@ import { flyIn } from '../animations/fly-in';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.activatedRoute.queryParams.subscribe((params)=>{
+      if(params.userId){
+        console.log(params);
+      }
+      
+    })
   }
 
   doclick(){
