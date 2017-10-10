@@ -3,7 +3,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-content-child-content',
   templateUrl: './content-child-content.component.html',
-  styleUrls: ['./content-child-content.component.css']
+  styleUrls: ['./content-child-content.component.less']
 })
 export class ContentChildContentComponent implements OnInit {
 

@@ -4,7 +4,7 @@ import { EventBusService } from '../service/event-bus.service';
 @Component({
   selector: 'app-borther-1',
   templateUrl: './borther-1.component.html',
-  styleUrls: ['./borther-1.component.css']
+  styleUrls: ['./borther-1.component.less']
 })
 export class Borther1Component implements OnInit {
 

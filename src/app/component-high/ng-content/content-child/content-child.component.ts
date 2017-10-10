@@ -4,7 +4,7 @@ import { ContentChildContentComponent } from '../content-child-content/content-c
 @Component({
   selector: 'app-content-child',
   templateUrl: './content-child.component.html',
-  styleUrls: ['./content-child.component.css']
+  styleUrls: ['./content-child.component.less']
 })
 export class ContentChildComponent implements OnInit {
   // @ContentChild(ContentChildContentComponent)

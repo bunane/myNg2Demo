@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ng-on-changes',
   templateUrl: './ng-on-changes.component.html',
-  styleUrls: ['./ng-on-changes.component.css']
+  styleUrls: ['./ng-on-changes.component.less']
 })
 export class NgOnChangesComponent implements OnInit {
 

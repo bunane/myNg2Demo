@@ -3,7 +3,7 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-font-resizer',
   templateUrl: './font-resizer.component.html',
-  styleUrls: ['./font-resizer.component.css']
+  styleUrls: ['./font-resizer.component.less']
 })
 export class FontResizerComponent implements OnInit {
   @Input()  size: number | string;

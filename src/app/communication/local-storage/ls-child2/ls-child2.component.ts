@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ls-child2',
   templateUrl: './ls-child2.component.html',
-  styleUrls: ['./ls-child2.component.css']
+  styleUrls: ['./ls-child2.component.less']
 })
 export class LsChild2Component implements OnInit {
 
