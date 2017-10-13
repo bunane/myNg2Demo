@@ -60,6 +60,10 @@ export const rootRouterConfig: Routes = [
         path: 'routerParams',
         loadChildren: './router-params/router-params.module#RouterParamsModule'
     },
+    {
+        path: 'rxjs',
+        loadChildren: './rxjs/rxjs.module#RxjsModule'
+    },
 
 
     {
