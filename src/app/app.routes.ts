@@ -64,6 +64,10 @@ export const rootRouterConfig: Routes = [
         path: 'rxjs',
         loadChildren: './rxjs/rxjs.module#RxjsModule'
     },
+    {
+        path: 'express',
+        loadChildren: './test-express/test-express.module#TestExpressModule'
+    },
 
 
     {
